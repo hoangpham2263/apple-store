@@ -1,0 +1,187 @@
+.wrapper {
+    width           : 100%;
+    display         : flex;
+    justify-content : center;
+    padding         : 40px 15px 100px;
+    background-color: #f5f5f7;
+}
+
+.two-row {
+    width          : 100%;
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+}
+
+.mg-right-20 {
+    margin-right: 20px;
+}
+
+.createProduct {
+    width          : var(--with-global);
+    flex           : 1;
+    display        : flex;
+    justify-content: center;
+
+    .form-createProduct {
+        width           : 530px;
+        padding         : 0 16px;
+        border-radius   : 10px;
+        background-image: linear-gradient(to right, rgba(100, 177, 212, 0.6), rgb(156, 170, 248));
+
+
+    }
+
+    .heading {
+        display        : flex;
+        justify-content: center;
+        width          : 100%;
+        font-size      : 3rem;
+        padding        : 16px 0;
+        margin         : 0;
+    }
+
+    .createProduct-item {
+        position      : relative;
+        display       : flex;
+        flex-direction: column;
+        width         : 100%;
+        margin-bottom : 16px;
+        overflow      : overlay;
+
+        .createProduct-item-label {
+            font-size: 1.6rem;
+        }
+
+        .createProduct-item-input {
+            font-size    : 1.5rem;
+            border       : 1px solid #EBEBEB;
+            border-radius: 8px;
+            height       : calc(48px);
+            padding      : 8px 8px 8px 16px;
+
+        }
+
+        .createProduct-item-input:focus-visible {
+            outline: unset;
+        }
+
+        .createProduct-item-input:focus {
+            border-color: #0066cc !important;
+        }
+
+        .createProduct-item-input-image {
+            height: calc(48px + 60px);
+        }
+
+        // Image avatar
+        .image-avatar {
+            position: absolute;
+            display : flex;
+            bottom  : 6px;
+            left    : 6px;
+
+            .image-avatar-img {
+                height      : 60px;
+                margin-right: 5px;
+            }
+        }
+    }
+
+    .createProduct-male {
+        display        : flex;
+        justify-content: flex-start;
+        align-items    : center;
+        margin-bottom  : 22px;
+
+        .createProduct-male-title-block {
+            margin-right: 12px;
+
+            .createProduct-male-title {
+                font-size: 1.6rem;
+            }
+
+        }
+
+        .createProduct-male-input-block {
+            display    : flex;
+            align-items: center;
+
+            .createProduct-male-input {
+                width       : 20px;
+                height      : 20px;
+                margin-right: 5px;
+            }
+
+            .createProduct-male-label {
+                font-size: 1.6rem;
+            }
+        }
+    }
+
+    .btnSubmit {
+        font-size    : 1.6rem;
+        color        : #fff;
+        width        : 100%;
+        min-height   : 48px;
+        background   : #0066CC;
+        border-radius: 8px;
+        border       : none;
+        margin-bottom: 20px;
+    }
+
+    .btnSubmit:hover {
+        opacity: 0.9;
+    }
+}
+
+// Css từng phần
+.des-textarea {
+    resize: none
+}
+
+.category-block {
+    flex: 1;
+}
+
+.version-block {
+    flex           : 1;
+    justify-content: flex-start;
+
+    .version-block-select {
+        width: 100%;
+    }
+
+    .version-select {
+        width: 100%;
+    }
+}
+
+// colors
+
+.block-colors {
+
+    position: relative;
+
+    .createProduct-male-input-block-select {
+        height: 130px;
+    }
+
+    .show-color-select {
+        position       : absolute;
+        display        : flex;
+        flex-wrap      : wrap;
+        justify-content: flex-start;
+        bottom         : 0;
+        right          : 0;
+        height         : 100%;
+        width          : 65%;
+        padding        : 5px 10px;
+
+        .show-color-select-item {
+            max-height   : 24px;
+            margin-right : 5px;
+            border-bottom: solid 1px #000;
+        }
+    }
+}

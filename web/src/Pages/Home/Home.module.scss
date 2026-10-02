@@ -1,0 +1,19 @@
+.wrapper {
+    width         : 100%;
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+}
+
+.container {
+    width: var(--with-global);
+}
+
+.img-block {
+    width : var(--with-global);
+    margin: 80px 0;
+
+    .img {
+        width: 100%;
+    }
+}
